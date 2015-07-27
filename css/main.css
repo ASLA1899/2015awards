@@ -270,6 +270,16 @@ button, html input[type="button"], input[type="reset"], input[type="submit"] {
   text-align: left;
   padding: 10px 15px 10px 20px;
   background-color: rgba(0, 0, 0, 0.7);
+  display: none;
+}
+
+.carousel-inner:hover > .item > .carousel-caption {
+  display: block;
+  transition: 2s ease-in-out;
+  -webkit-transition: 2s ease-in-out;
+  -moz-transition: 2s ease-in-out;
+  -o-transition: 2s ease-in-out;
+  -ms-transition: 2s ease-in-out;
 }
 
 
