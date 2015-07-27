@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<!--[if lte IE 8]>
+<!--[if lte IE 9]>
   <script>
-    alert("You have an old browser this site will not display well! Please use Chrome, Firefox, Safari or Upgrade to IE 11");
+    alert("You have an old browser this site will not display well! Please use latest versions Chrome, Firefox, Safari or Upgrade to IE 11/Edge");
     </script>
     <p>Thanks for closing the message box.</p>
     <![endif]-->
-<!--[if gte IE 9]><!-->
+<!--[if gte IE 10]><!-->
 <html class='no-js' lang='en'>
   <!--<![endif]-->
   <head>
@@ -22,6 +22,7 @@
     <!--Bootstrap Core Script-->
     <script src="js/jquery.min.js" type="text/javascript"></script>
     <script src="js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="js/customcarousel.js" type="text/javascript"></script>
     <script src="js/lazyload.js" type="text/javascript"></script>
     <!--Bootstrap Core Script-->
     <!--Google Search-->
@@ -440,7 +441,7 @@
   </div>
 </div>
 
-<script type="text/javascript">
+<script>
 $('#myCarousel').carousel({
     interval: 13000
 });
@@ -468,7 +469,6 @@ $('#myCarousel').on('slid', function (e) {
                 var id = $('.item.active').data('slide-number');
                 $('#carousel-text').html($('#slide-content-'+id).html());
         });
-        
 </script>
 
 <!--Google Analytics-->
