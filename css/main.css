@@ -108,10 +108,11 @@ ol {
 .navbar-brand img {
   width: 224px;
   height: auto;
+  margin-left: 6px;
 }
 
 .navbar-nav {
-  margin: 20px 0px;
+  margin: 20px 0px 20px 5px;
 }
 
 .navbar-form {
@@ -303,8 +304,9 @@ button, html input[type="button"], input[type="reset"], input[type="submit"] {
   font-style: italic;
 }
 
-.selected img {
+.carousel-selected > .active, .selected img {
   border: solid 2px #6C0E0E;
+  cursor: pointer;
 }
 
 .HonorsHeader h4 {
@@ -414,7 +416,7 @@ button, html input[type="button"], input[type="reset"], input[type="submit"] {
 
 #BigQuote {
   display: inline-block;
-  margin-left: 42px;
+  margin-left: 60px;
   margin-right: 40px;
   margin-bottom: 15px;
   border-top: 1px solid #6C0E0E;
@@ -477,6 +479,7 @@ button, html input[type="button"], input[type="reset"], input[type="submit"] {
 #team {
   margin-top: 10px;
   margin-left: 0px;
+  padding-left: 0px;
 }
 
 #products {
@@ -1412,7 +1415,7 @@ color: #ff6c2f;
 }
 
 #ProjectStatement {
-  margin-left: 28px;
+  margin-left: 45px;
 }
 
 #ProjectStatement h4 {
@@ -1421,7 +1424,7 @@ color: #ff6c2f;
 }
 
 #ProjectNarrative {
-  margin-left: 28px;
+  margin-left: 45px;
   padding-right: 15px;
   margin-right: 15px;
 }
@@ -1432,7 +1435,7 @@ color: #ff6c2f;
 }
 
 #ProjectResources {
-  margin-left: 27px;
+  margin-left: 45px;
 }
 
 #ProjectResources h4 {
@@ -1461,7 +1464,7 @@ color: #ff6c2f;
 
 #slider-thumbs {
   padding: 10px;
-  margin-left: 27px;
+  margin-left: 17px;
   margin-right: 25px;
 }
 
@@ -1471,6 +1474,10 @@ color: #ff6c2f;
   height: auto;
   background-color: #6C0E0E;
   margin-top: 35px;
+}
+
+#footer h6 {
+  margin-left: 40px;
 }
 
 ul.nav li.dropdown:hover > ul.dropdown-menu {
