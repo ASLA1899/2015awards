@@ -416,7 +416,7 @@ button, html input[type="button"], input[type="reset"], input[type="submit"] {
 
 #BigQuote {
   display: inline-block;
-  margin-left: 60px;
+  margin-left: 50px;
   margin-right: 40px;
   margin-bottom: 15px;
   border-top: 1px solid #6C0E0E;
@@ -1415,7 +1415,7 @@ color: #ff6c2f;
 }
 
 #ProjectStatement {
-  margin-left: 45px;
+  margin-left: 35px;
 }
 
 #ProjectStatement h4 {
@@ -1424,7 +1424,7 @@ color: #ff6c2f;
 }
 
 #ProjectNarrative {
-  margin-left: 45px;
+  margin-left: 35px;
   padding-right: 15px;
   margin-right: 15px;
 }
@@ -1435,7 +1435,7 @@ color: #ff6c2f;
 }
 
 #ProjectResources {
-  margin-left: 45px;
+  margin-left: 35px;
 }
 
 #ProjectResources h4 {
@@ -1477,7 +1477,7 @@ color: #ff6c2f;
 }
 
 #footer h6 {
-  margin-left: 40px;
+  margin-left: 30px;
 }
 
 ul.nav li.dropdown:hover > ul.dropdown-menu {
