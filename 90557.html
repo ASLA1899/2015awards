@@ -372,20 +372,29 @@
 
 <script type="text/javascript">
 $('#myCarousel').carousel({
-    interval: 13000
+    interval: 8000
 });
+
+var selectorIdx = 1;
+var numItems = 15;
 
 // handles the carousel thumbnails
 $('.carousel-selector').click(function () {
-    var selectorIdx = $(this).closest('li').index();
-    
+    selectorIdx = $(this).closest('li').index();
+    $('#myCarousel').carousel(selectorIdx)
+});
+
+$('#myCarousel').on('slide.bs.carousel', function () {
     $('#myCarousel')
-      .carousel(selectorIdx)
-      .find('.carousel-selector').removeClass('selected')
-      .eq(selectorIdx).addClass('selected')
-      .end()
-      .find('.item').removeClass('selected')
-      .eq(selectorIdx).addClass('active');
+        .find('.carousel-selector').removeClass('selected')
+        .eq(selectorIdx).addClass('selected')
+        .end()
+        .find('.item').removeClass('selected')
+        .eq(selectorIdx).addClass('active');
+    if (selectorIdx < (numItems - 1))
+        selectorIdx++;
+    else
+        selectorIdx = 0;
 });
         
 </script>
