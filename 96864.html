@@ -358,17 +358,14 @@ $('.carousel-selector').click(function () {
     $('#myCarousel').carousel(selectorIdx)
 });
 
-$('#myCarousel').on('slide.bs.carousel', function () {
-    $('#myCarousel')
+$('#myCarousel').on('slide.bs.carousel', function (e) {
+    selectorIdx = $(e.relatedTarget).index();
+    $(this)
         .find('.carousel-selector').removeClass('selected')
         .eq(selectorIdx).addClass('selected')
         .end()
         .find('.item').removeClass('selected')
-        .eq(selectorIdx).addClass('active');
-    if (selectorIdx < (numItems - 1))
-        selectorIdx++;
-    else
-        selectorIdx = 0;
+        .eq(selectorIdx).addClass('active');    
 });
         
 </script>
