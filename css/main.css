@@ -348,7 +348,7 @@ button, html input[type="button"], input[type="reset"], input[type="submit"] {
 }
 
 .stButton .stMainServices {
-  min-height: 25px;
+  min-height: 35px;
 }
 
 #ProjectXtra {
@@ -655,15 +655,11 @@ h2 {
 }
 
 .carousel-control.left {
-  background-image: none;
-  bottom: 25%;
-  left: -3px;
+  display: none;
 }
 
 .carousel-control.right {
-  background-image: none;
-  bottom: 25%;
-  right: -3px;
+  display: none;
 }
 
 .carousel-caption {
