@@ -646,6 +646,12 @@ h2 {
   font-weight: 300;
 }
 
+#share {
+  margin-left: 30px;
+  max-width: 100vw;
+  padding: 0px;
+}
+
 .carousel-control {
   font-size: 35px;
 }
@@ -666,27 +672,45 @@ h2 {
   left: 0;
   width: 100%;
   text-align: left;
-  padding: 10px 15px 10px 20px;
+  padding: 10px 15px 20px 20px;
   background-color: rgba(0, 0, 0, 0.7);
   position: relative;
-  display: none;
 }
 
-.carousel-inner:hover > .item > .carousel-caption {
+.carousel-inner > .item > .carousel-caption {
   display: block;
-  transition: 2s ease-in-out;
-  -webkit-transition: 2s ease-in-out;
-  -moz-transition: 2s ease-in-out;
-  -o-transition: 2s ease-in-out;
-  -ms-transition: 2s ease-in-out;
+}
+
+.carousel-indicators {
+  position: absolute;
+  bottom: -7px;
+  left: 50%;
+  z-index: 15;
+  width: 70%;
+  padding-left: 0;
+  margin-left: -35%;
+  text-align: center;
+  list-style: none;
 }
 
 .carousel-indicators li {
-  display: none;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 1px;
+  text-indent: -999px;
+  cursor: pointer;
+  background-color: #000 \9;
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid #6C0E0E;
+  border-radius: 10px;
 }
 
 .carousel-indicators .active {
-  display: none;
+  width: 12px;
+  height: 12px;
+  margin: 0;
+  background-color: #6C0E0E;
 }
 
 .glyphicon-chevron-left {
@@ -879,9 +903,8 @@ color: #ffffff;
 }
 
 #ProjectHeader {
-  padding-top: 10px;
-  padding-left: 10px;
-  padding-bottom: 5px;
+  margin-top: 10px;
+  padding-left: 15px;
   margin-left: 25px;
 }
 
@@ -924,6 +947,8 @@ color: #ffffff;
 #ProjectResources {
   margin-top: 15px;
   margin-left: 25px;
+  max-width: 100%;
+  padding-left: 15px;
 }
 
 
@@ -973,6 +998,18 @@ h6 {
   background-color: #6C0E0E;
   margin-left: 15px;
   margin-top: 15px;
+}
+
+#aslafund {
+  width: 100%;
+}
+
+#lam {
+  width: 100%;
+}
+
+#victorstanley {
+  width: 100%;
 }
 
 #slider-thumbs {
